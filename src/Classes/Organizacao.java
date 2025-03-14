@@ -8,13 +8,14 @@ public class Organizacao {
     public static void main(String[] args) {}
     String nome;
     List<String> listaProjeto = new ArrayList<>();
+    Scanner sc = new Scanner(System.in);
 
-    void adicionarProjeto(ProjetoSustentavel projeto) {
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Digite o nome do projeto: ");
+    void adicionarProjeto(ProjetoSustentavel Projeto) {
         nome = sc.nextLine();
+        listaProjeto.add(nome);
     }
 
-    void listarProjetos(){}
+    void listarProjetos(){
+        System.out.println("Lista de Projetos \n" + nome);
+    }
 }
