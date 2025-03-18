@@ -13,4 +13,8 @@ public class RelatorioImpacto {
         relatorio = sc.nextLine();
         System.out.println("Este é o relatório entregue: \n" + relatorio);
     }
+
+    public void calcularImpacto() {
+        System.out.println("Impacto: " + arvoresPlantadas + " árvores plantadas.");
+    }
 }
